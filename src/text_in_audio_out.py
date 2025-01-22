@@ -13,7 +13,7 @@ load_dotenv()
 
 # Set environment variables or edit the corresponding values here.
 endpoint = os.environ["AZURE_OPENAI_ENDPOINT"]
-deployment = "gpt-4o-realtime-preview"
+deployment = os.environ["AZURE_OPENAI_DEPLOYMENT_NAME"]
 
 async def text_in_audio_out():
     async with RTLowLevelClient(
