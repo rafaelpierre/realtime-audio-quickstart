@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Set environment variables or edit the corresponding values here.
 endpoint = os.environ["AZURE_OPENAI_ENDPOINT"]
 deployment = os.environ["AZURE_OPENAI_DEPLOYMENT_NAME"]
 
